@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Deepak Kumar - Principal DevOps Engineer (Dev-SRE) with 9+ years of experience in AWS, Kubernetes, Terraform, Jenkins, Docker, microservices, full-stack development, and internal developer platforms."/>
+<meta name="keywords" content="Deepak Kumar, Principal DevOps Engineer, Dev-SRE, DevOps Portfolio, SRE Portfolio, Platform Engineer, AWS, Kubernetes, EKS, Terraform, Jenkins, Docker, Python, Java, PHP, Vue, Internal Developer Platform, IDP, Bengaluru"/>
+<meta name="author" content="Deepak Kumar"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<meta name="theme-color" content="#faf8f4"/>
+<meta property="og:title" content="Deepak Kumar - Principal DevOps Engineer (Dev-SRE)"/>
+<meta property="og:description" content="9+ years in AWS, Kubernetes, automation, CI/CD, microservices, and enterprise Internal Developer Platform engineering."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="Deepak Kumar.jpeg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Deepak Kumar - Principal DevOps Engineer (Dev-SRE)"/>
+<meta name="twitter:description" content="Portfolio for a Principal DevOps Engineer focused on AWS, Kubernetes, automation, CI/CD, and platform engineering."/>
+<meta name="twitter:image" content="Deepak Kumar.jpeg"/>
+<title>Deepak Kumar - Principal DevOps Engineer (Dev-SRE)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --cream: #faf8f4;
+  --cream2: #f3f0ea;
+  --parchment: #ede8df;
+  --warm-border: #e0d9ce;
+  --sage: #7a8c76;
+  --sage-light: #edf0eb;
+  --terracotta: #c4735a;
+  --terracotta-light: #f5ede9;
+  --ink: #2a2520;
+  --ink-mid: #6b6158;
+  --ink-light: #a09689;
+  --gold: #c9a96e;
+  --gold-light: #f7f1e6;
+  --white: #ffffff;
+  --shadow: 0 2px 24px rgba(42,37,32,0.07);
+  --shadow-lg: 0 8px 48px rgba(42,37,32,0.1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;line-height:1.6;}
+ 
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 60px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,244,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--warm-border);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--ink);}
+.nav-logo em{font-style:italic;color:var(--terracotta);}
+.nav-links{display:flex;gap:32px;list-style:none;}
+.nav-links a{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-mid);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--terracotta);}
+.nav-cta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 20px;background:var(--ink);color:var(--cream);text-decoration:none;transition:background 0.2s;}
+.nav-cta:hover{background:var(--terracotta);}
+ 
+/* HERO */
+#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:68px;}
+.hero-left{padding:80px 60px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--warm-border);}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:14px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);margin-bottom:24px;display:flex;align-items:center;gap:12px;opacity:0;animation:rise 0.7s 0.2s ease forwards;}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--terracotta);}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(64px,9vw,110px);font-weight:700;line-height:1;letter-spacing:-1px;margin-bottom:10px;opacity:0;animation:rise 0.8s 0.35s ease forwards;}
+.hero-name strong{font-weight:700;}
+.hero-name .italic{font-style:italic;color:var(--terracotta);font-weight:700;}
+.hero-title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--ink-mid);margin-bottom:28px;opacity:0;animation:rise 0.8s 0.5s ease forwards;}
+.hero-desc{font-size:15px;color:var(--ink-mid);line-height:1.8;max-width:440px;margin-bottom:44px;opacity:0;animation:rise 0.8s 0.65s ease forwards;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:rise 0.8s 0.8s ease forwards;}
+.btn-main{padding:13px 28px;background:var(--ink);color:var(--cream);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:background 0.25s;}
+.btn-main:hover{background:var(--terracotta);}
+.btn-ghost{padding:13px 28px;border:1px solid var(--warm-border);color:var(--ink-mid);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all 0.25s;}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink);}
+ 
+.hero-right{background:var(--cream2);display:flex;flex-direction:column;justify-content:center;padding:80px 60px;position:relative;overflow:hidden;}
+.hero-right::before{content:'';position:absolute;top:-100px;right:-100px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(196,115,90,0.07),transparent 70%);}
+.hero-stats{display:flex;flex-direction:column;}
+.hero-stat{padding:26px 0;border-bottom:1px solid var(--warm-border);display:flex;align-items:baseline;gap:16px;opacity:0;animation:rise 0.7s ease forwards;}
+.hero-stat:nth-child(1){animation-delay:0.5s;}
+.hero-stat:nth-child(2){animation-delay:0.65s;}
+.hero-stat:nth-child(3){animation-delay:0.8s;}
+.hero-stat:nth-child(4){animation-delay:0.95s;}
+.hero-stat:last-child{border-bottom:none;}
+.stat-big{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--terracotta);line-height:1;}
+.stat-label{font-size:13px;color:var(--ink-mid);line-height:1.4;}
+.stat-label strong{display:block;color:var(--ink);font-weight:500;font-size:14px;}
+.location-badge{margin-top:36px;padding:14px 18px;background:var(--white);border:1px solid var(--warm-border);display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-mid);}
+.loc-dot{width:8px;height:8px;border-radius:50%;background:var(--sage);flex-shrink:0;box-shadow:0 0 0 3px rgba(122,140,118,0.2);animation:blink 2s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}
+ 
+/* SECTIONS */
+section{padding:96px 60px;position:relative;}
+.sec-header{margin-bottom:56px;}
+.sec-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);margin-bottom:12px;display:flex;align-items:center;gap:10px;}
+.sec-tag::before{content:'';width:22px;height:1px;background:var(--terracotta);}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,58px);font-weight:300;letter-spacing:-1px;line-height:1.1;}
+.sec-title em{font-style:italic;color:var(--terracotta);}
+ 
+/* SKILLS */
+#skills{background:var(--white);border-top:1px solid var(--warm-border);}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--warm-border);border:1px solid var(--warm-border);}
+.skill-cell{background:var(--white);padding:30px 26px;transition:background 0.25s;position:relative;}
+.skill-cell:hover{background:var(--terracotta-light);}
+.skill-cell-icon{font-size:28px;margin-bottom:12px;}
+.skill-cell-cat{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);margin-bottom:10px;}
+.skill-cell-name{font-size:24px;font-weight:500;margin-bottom:14px;color:var(--ink);}
+.pill-row{display:flex;flex-wrap:wrap;gap:6px;}
+.pill{font-family:'DM Mono',monospace;font-size:14px;padding:6px 12px;background:var(--cream2);color:var(--ink-mid);border:1px solid var(--warm-border);letter-spacing:0.5px;}
+.pill.accent{background:var(--terracotta-light);color:var(--terracotta);border-color:rgba(196,115,90,0.25);}
+.pill.sage{background:var(--sage-light);color:var(--sage);border-color:rgba(122,140,118,0.25);}
+.pill.gold{background:var(--gold-light);color:#8a6c3a;border-color:rgba(201,169,110,0.3);}
+ 
+/* EXPERIENCE */
+#experience{background:var(--cream);}
+.exp-row{display:grid;grid-template-columns:190px 1fr;border-top:1px solid var(--warm-border);padding:44px 0;opacity:0;transform:translateY(14px);transition:all 0.55s ease;}
+.exp-row.visible{opacity:1;transform:translateY(0);}
+.exp-row:last-child{border-bottom:1px solid var(--warm-border);}
+.exp-meta{padding-right:36px;}
+.exp-period{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:1px;color:var(--ink-light);margin-bottom:8px;text-transform:uppercase;}
+.exp-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:9px;padding:3px 8px;letter-spacing:1px;background:var(--sage-light);color:var(--sage);border:1px solid rgba(122,140,118,0.3);text-transform:uppercase;}
+.exp-badge.current{background:var(--terracotta-light);color:var(--terracotta);border-color:rgba(196,115,90,0.3);}
+.exp-company{font-family:'DM Mono',monospace;font-size:15px;color:var(--terracotta);letter-spacing:1px;margin-bottom:6px;text-transform:uppercase;}
+.exp-role{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:400;margin-bottom:18px;line-height:1.2;}
+.exp-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.exp-list li{font-size:22px;color:var(--ink-mid);line-height:1.7;padding-left:16px;position:relative;}
+.exp-list li::before{content:'—';position:absolute;left:0;color:var(--terracotta);font-size:12px;}
+.exp-list li strong{color:var(--ink);font-weight:500;}
+.impact-tag{display:inline-block;margin-left:4px;font-family:'DM Mono',monospace;font-size:9px;padding:1px 6px;background:var(--gold-light);color:#8a6c3a;border:1px solid rgba(201,169,110,0.4);}
+ 
+/* PROJECTS */
+#projects{background:var(--cream2);border-top:1px solid var(--warm-border);}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.project-card{background:var(--white);border:1px solid var(--warm-border);padding:36px;position:relative;overflow:hidden;transition:all 0.3s ease;}
+.project-card:hover{border-color:var(--terracotta);box-shadow:var(--shadow-lg);transform:translateY(-3px);}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--terracotta),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;}
+.project-card:hover::before{transform:scaleX(1);}
+.project-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;}
+.project-num{font-family:'DM Mono',monospace;font-size:12px;color:var(--ink-light);letter-spacing:2px;}
+.project-status{font-family:'DM Mono',monospace;font-size:11px;padding:4px 10px;letter-spacing:1px;text-transform:uppercase;}
+.status-prod{background:var(--sage-light);color:var(--sage);border:1px solid rgba(122,140,118,0.3);}
+.status-ml{background:var(--gold-light);color:#8a6c3a;border:1px solid rgba(201,169,110,0.3);}
+.project-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:400;margin-bottom:12px;line-height:1.2;}
+.project-desc{font-size:18px;color:var(--ink-mid);line-height:1.7;margin-bottom:20px;}
+.project-metrics{display:flex;gap:0;margin-bottom:20px;border:1px solid var(--warm-border);}
+.metric{flex:1;padding:14px 12px;text-align:center;border-right:1px solid var(--warm-border);}
+.metric:last-child{border-right:none;}
+.metric-val{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--terracotta);line-height:1;}
+.metric-label{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-light);letter-spacing:1px;margin-top:3px;text-transform:uppercase;}
+.project-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+.project-link{font-family:'DM Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--terracotta);text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s;}
+.project-link:hover{gap:10px;}
+ 
+/* ACHIEVEMENTS */
+#achievements{background:var(--white);border-top:1px solid var(--warm-border);}
+.ach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--warm-border);border:1px solid var(--warm-border);}
+.ach-card{background:var(--white);padding:40px 32px;transition:background 0.25s;}
+.ach-card:hover{background:var(--terracotta-light);}
+.ach-icon{font-size:36px;margin-bottom:14px;}
+.ach-title{font-size:22px;font-weight:500;margin-bottom:8px;color:var(--ink);}
+.ach-desc{font-size:18px;color:var(--ink-mid);line-height:1.6;}
+ 
+/* CONTACT */
+#contact{background:var(--ink);color:var(--cream);}
+#contact .sec-title{color:var(--cream);}
+#contact .sec-tag{color:var(--gold);}
+#contact .sec-tag::before{background:var(--gold);}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:56px;}
+.contact-blurb{font-size:18px;color:rgba(250,248,244,0.6);line-height:1.8;margin-bottom:36px;}
+.contact-detail{display:flex;flex-direction:column;gap:1px;}
+.contact-row{display:flex;align-items:center;gap:14px;padding:18px 20px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);text-decoration:none;color:rgba(250,248,244,0.75);transition:all 0.2s;font-size:16px;}
+.contact-row:hover{background:rgba(196,115,90,0.15);color:var(--cream);border-color:rgba(196,115,90,0.4);}
+.contact-row-icon{font-size:18px;width:26px;text-align:center;}
+.availability-box{padding:32px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);margin-bottom:20px;}
+.avail-dot{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.avail-circle{width:8px;height:8px;border-radius:50%;background:#7cb87a;animation:blink 2s infinite;}
+.avail-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;margin-bottom:8px;}
+.avail-desc{font-size:18px;color:rgba(250,248,244,0.5);line-height:1.6;}
+.about-extra{display:flex;flex-direction:column;gap:12px;}
+.about-item{padding:16px;border:1px solid rgba(255,255,255,0.07);}
+.about-item-label{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;}
+.about-item-val{font-size:16px;color:rgba(250,248,244,0.6);}
+ 
+/* FOOTER */
+footer{background:var(--ink);padding:20px 60px;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;}
+footer p{font-family:'DM Mono',monospace;font-size:10px;color:rgba(250,248,244,0.3);letter-spacing:1px;}
+footer span{color:var(--terracotta);}
+ 
+/* TOOLS */
+#tools{background:var(--cream2);border-top:1px solid var(--warm-border);}
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;}
+.tool-card{background:var(--white);border:1px solid var(--warm-border);padding:20px;text-align:center;transition:all 0.3s ease;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.tool-card:hover{background:var(--terracotta-light);border-color:var(--terracotta);transform:translateY(-2px);}
+.tool-icon{font-size:36px;line-height:1;}
+.tool-name{font-family:'DM Mono',monospace;font-size:11px;font-weight:600;letter-spacing:1px;color:var(--ink);text-transform:uppercase;text-align:center;}
+ 
+@keyframes rise{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+ 
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:0 24px;} .nav-links{display:none;}
+  #hero{grid-template-columns:1fr;min-height:auto;}
+  .hero-left{padding:60px 24px 40px;border-right:none;border-bottom:1px solid var(--warm-border);}
+  .hero-right{padding:40px 24px 60px;}
+  section{padding:70px 24px;}
+  .skills-grid,.ach-grid{grid-template-columns:1fr;}
+  .exp-row{grid-template-columns:1fr;gap:14px;}
+  .projects-grid{grid-template-columns:1fr;}
+  .contact-layout{grid-template-columns:1fr;gap:40px;}
+  footer{padding:20px 24px;flex-direction:column;gap:8px;text-align:center;}
+}
+
+.initial-avatar {
+  width:220px;height:220px;border-radius:50%;margin:0 auto 32px auto;overflow:hidden;
+  border:1px solid var(--warm-border);box-shadow:0 4px 32px rgba(42,37,32,0.10);
+}
+.initial-avatar img{width:100%;height:100%;object-fit:cover;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Deepak <em>Kumar</em></div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#tools">Tools</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:DEEPAKRAJ.1532@GMAIL.COM" class="nav-cta">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero" style="padding:0;">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Principal DevOps Engineer · Dev-SRE</div>
+    <h1 class="hero-name"><strong>Deepak</strong><br/><strong><span class="italic">Kumar</span></strong></h1>
+    <p class="hero-title">AWS · KUBERNETES · TERRAFORM · JENKINS · DOCKER</p>
+    <p class="hero-desc">Principal DevOps Engineer with 9+ years of experience designing cloud-native platforms, automating infrastructure, building CI/CD pipelines, managing large-scale Kubernetes environments, and developing enterprise self-service platforms.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-main">See Projects</a>
+      <a href="https://www.linkedin.com/in/deepak-kumar-43048083" class="btn-ghost" target="_blank" rel="noopener">Linkedin</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="initial-avatar" aria-label="Deepak Kumar profile photo"><img src="Deepak Kumar.jpeg" alt="Deepak Kumar"/></div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-big">9+</div>
+        <div class="stat-label"><strong>Years of Experience</strong>DevOps, SRE &amp; Full-Stack Developer</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-big">IDP</div>
+        <div class="stat-label"><strong>Internal Developer Platform</strong>Self-service cloud &amp; Kubernetes operations</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-big">Multi</div>
+        <div class="stat-label"><strong>Cluster Management</strong>Unified Kubernetes control plane</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-big">2</div>
+        <div class="stat-label"><strong>Awards</strong>Innovation Award &amp; Excellence Award</div>
+      </div>
+    </div>
+    <div class="location-badge">
+      <div class="loc-dot"></div>
+      Bengaluru, India - Open to Principal DevOps, SRE &amp; Platform Engineering roles
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-header">
+    <div class="sec-tag">01 - Expertise</div>
+    <h2 class="sec-title">Technical <em>Stack</em></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-cell">
+      <div class="skill-cell-icon">☁️</div>
+      <div class="skill-cell-cat">Cloud Platforms</div>
+      <div class="skill-cell-name">AWS Infrastructure</div>
+      <div class="pill-row"><span class="pill accent">AWS</span><span class="pill accent">EKS</span><span class="pill">EC2</span><span class="pill">S3</span><span class="pill">RDS</span><span class="pill">IAM</span><span class="pill">CloudWatch</span></div>
+    </div>
+    <div class="skill-cell">
+      <div class="skill-cell-icon">🏗️</div>
+      <div class="skill-cell-cat">IaC &amp; Automation</div>
+      <div class="skill-cell-name">Infrastructure as Code</div>
+      <div class="pill-row"><span class="pill sage">Terraform</span><span class="pill sage">Automation</span><span class="pill">Workflow Orchestration</span><span class="pill">Self-Service Platforms</span></div>
+    </div>
+    <div class="skill-cell">
+      <div class="skill-cell-icon">🐳</div>
+      <div class="skill-cell-cat">Containers</div>
+      <div class="skill-cell-name">Kubernetes Ecosystem</div>
+      <div class="pill-row"><span class="pill accent">Kubernetes</span><span class="pill accent">Docker</span><span class="pill">EKS</span><span class="pill">Devtron</span><span class="pill">Autoscaling</span><span class="pill">Rolling Deployments</span></div>
+    </div>
+    <div class="skill-cell">
+      <div class="skill-cell-icon">🔁</div>
+      <div class="skill-cell-cat">CI/CD</div>
+      <div class="skill-cell-name">Delivery Automation</div>
+      <div class="pill-row"><span class="pill sage">Jenkins</span><span class="pill sage">GitLab</span><span class="pill">Git Workflows</span><span class="pill">Rollback Automation</span><span class="pill">Release Validation</span></div>
+    </div>
+    <div class="skill-cell">
+      <div class="skill-cell-icon">📊</div>
+      <div class="skill-cell-cat">Observability</div>
+      <div class="skill-cell-name">Monitoring &amp; Reliability</div>
+      <div class="pill-row"><span class="pill gold">Datadog</span><span class="pill gold">CloudWatch</span><span class="pill">Logging</span><span class="pill">Alerting</span><span class="pill">RCA</span><span class="pill">Health Diagnostics</span></div>
+    </div>
+    <div class="skill-cell">
+      <div class="skill-cell-icon">⌨️</div>
+      <div class="skill-cell-cat">Development</div>
+      <div class="skill-cell-name">Backend &amp; Full Stack</div>
+      <div class="pill-row"><span class="pill accent">Python</span><span class="pill accent">Java</span><span class="pill">PHP</span><span class="pill">Vue.js</span><span class="pill">Laravel</span><span class="pill">Django</span><span class="pill">Flask</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS & TECHNOLOGIES -->
+<section id="tools">
+  <div class="sec-header">
+    <div class="sec-tag">01a - Tools</div>
+    <h2 class="sec-title">Tech <em>Arsenal</em></h2>
+  </div>
+  <div class="tools-grid">
+    <div class="tool-card"><div class="tool-icon">☁️</div><div class="tool-name">AWS</div></div>
+    <div class="tool-card"><div class="tool-icon">☸️</div><div class="tool-name">Kubernetes</div></div>
+    <div class="tool-card"><div class="tool-icon">🐳</div><div class="tool-name">Docker</div></div>
+    <div class="tool-card"><div class="tool-icon">📝</div><div class="tool-name">Terraform</div></div>
+    <div class="tool-card"><div class="tool-icon">🔴</div><div class="tool-name">Jenkins</div></div>
+    <div class="tool-card"><div class="tool-icon">🦊</div><div class="tool-name">GitLab</div></div>
+    <div class="tool-card"><div class="tool-icon">📊</div><div class="tool-name">Datadog</div></div>
+    <div class="tool-card"><div class="tool-icon">📈</div><div class="tool-name">CloudWatch</div></div>
+    <div class="tool-card"><div class="tool-icon">🧭</div><div class="tool-name">Devtron</div></div>
+    <div class="tool-card"><div class="tool-icon">🐍</div><div class="tool-name">Python</div></div>
+    <div class="tool-card"><div class="tool-icon">☕</div><div class="tool-name">Java</div></div>
+    <div class="tool-card"><div class="tool-icon">🐘</div><div class="tool-name">PHP</div></div>
+    <div class="tool-card"><div class="tool-icon">🟢</div><div class="tool-name">Vue.js</div></div>
+    <div class="tool-card"><div class="tool-icon">🐬</div><div class="tool-name">MySQL</div></div>
+    <div class="tool-card"><div class="tool-icon">🐘</div><div class="tool-name">PostgreSQL</div></div>
+    <div class="tool-card"><div class="tool-icon">🔴</div><div class="tool-name">Redis</div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-header">
+    <div class="sec-tag">02 - History</div>
+    <h2 class="sec-title">Work <em>Experience</em></h2>
+  </div>
+  <div>
+    <div class="exp-row">
+      <div class="exp-meta"><div class="exp-period">Apr 2024 - Present</div><div class="exp-badge current">Current</div></div>
+      <div>
+        <div class="exp-company">Mpokket Financial Services Pvt. Ltd - Bangalore</div>
+        <div class="exp-role">Principal DevOps Engineer</div>
+        <ul class="exp-list">
+          <li>Architected and developed an <strong>enterprise Internal Developer Platform</strong> enabling self-service infrastructure and application management across AWS and Kubernetes.</li>
+          <li>Designed a centralized operations portal integrating Kubernetes, AWS services, Redis, database operations, workflow orchestration, RBAC, approval systems, and Auth0 SSO.</li>
+          <li>Built multi-cluster Kubernetes management, automated service lifecycle operations, log retrieval, resource monitoring, and visual workflow automation for operational runbooks.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-row">
+      <div class="exp-meta"><div class="exp-period">2022 - 2024</div><div class="exp-badge">Full-time</div></div>
+      <div>
+        <div class="exp-company">Mpokket Financial Services Pvt. Ltd - Bengaluru</div>
+        <div class="exp-role">Senior Software Engineer / DevOps Engineer</div>
+        <ul class="exp-list">
+          <li>Managed AWS infrastructure including <strong>EKS, EC2, IAM, S3, RDS, Load Balancers, Auto Scaling Groups, and CloudWatch</strong>.</li>
+          <li>Automated infrastructure provisioning with Terraform, containerized applications with Docker, and deployed workloads on Kubernetes clusters.</li>
+          <li>Built Jenkins, GitLab, and Git-based CI/CD workflows for deployment, rollback, release validation, autoscaling, health checks, observability, and incident RCA.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-row">
+      <div class="exp-meta"><div class="exp-period">Nov 2020 - Apr 2022</div><div class="exp-badge">Full-time</div></div>
+      <div>
+        <div class="exp-company">Mpokket Financial Services Pvt. Ltd - Bangalore</div>
+        <div class="exp-role">Software Developer</div>
+        <ul class="exp-list">
+          <li>Designed scalable backend services and REST APIs for high-traffic financial applications, onboarding, CRM, notifications, customer management, and loan workflows.</li>
+          <li>Developed end-to-end applications using <strong>Java, Python, PHP Laravel/Lumen, Vue.js, JavaScript, HTML5, CSS3, Bootstrap, and AJAX</strong>.</li>
+          <li>Implemented authentication, authorization, RBAC, database schema design, caching, query optimization, lazy loading, and API response optimization.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-row">
+      <div class="exp-meta"><div class="exp-period">Nov 2017 - Nov 2020</div><div class="exp-badge">Full-time</div></div>
+      <div>
+        <div class="exp-company">Zysk Technology - Bangalore</div>
+        <div class="exp-role">Web Developer / Backend Developer</div>
+        <ul class="exp-list">
+          <li>Developed and maintained backend services using <strong>Python Django/Flask</strong> and <strong>Laravel PHP</strong> for web and mobile applications.</li>
+          <li>Designed REST APIs, authentication, authorization, RBAC modules, relational databases, and optimized complex SQL queries.</li>
+          <li>Delivered customer-facing platforms across field force management, course management, vehicle service, employee management, and survey/feedback systems.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-header">
+    <div class="sec-tag">03 - Portfolio</div>
+    <h2 class="sec-title">Featured <em>Projects</em></h2>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-header"><span class="project-num">Project 01</span><span class="project-status status-prod">Platform</span></div>
+      <div class="project-title">Enterprise Internal Developer Platform</div>
+      <div class="project-desc">Architected and developed an IDP that enables self-service infrastructure and application management across AWS and Kubernetes, reducing dependency on direct cloud and cluster access.</div>
+      <div class="project-metrics">
+        <div class="metric"><div class="metric-val">IDP</div><div class="metric-label">Platform</div></div>
+        <div class="metric"><div class="metric-val">RBAC</div><div class="metric-label">Governance</div></div>
+        <div class="metric"><div class="metric-val">SSO</div><div class="metric-label">Auth0</div></div>
+      </div>
+      <div class="project-stack"><span class="pill accent">AWS</span><span class="pill accent">Kubernetes</span><span class="pill">Redis</span><span class="pill">Databases</span><span class="pill sage">RBAC</span><span class="pill gold">Workflow Automation</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-header"><span class="project-num">Project 02</span><span class="project-status status-prod">DevOps</span></div>
+      <div class="project-title">Kubernetes Service Operations Portal</div>
+      <div class="project-desc">Built multi-cluster Kubernetes management capabilities for deployment scaling, restart operations, log retrieval, resource monitoring, service health checks, and diagnostics from a unified control plane.</div>
+      <div class="project-metrics">
+        <div class="metric"><div class="metric-val">Multi</div><div class="metric-label">Cluster</div></div>
+        <div class="metric"><div class="metric-val">Auto</div><div class="metric-label">Lifecycle</div></div>
+        <div class="metric"><div class="metric-val">Live</div><div class="metric-label">Diagnostics</div></div>
+      </div>
+      <div class="project-stack"><span class="pill accent">EKS</span><span class="pill accent">Docker</span><span class="pill">Kubernetes</span><span class="pill">Devtron</span><span class="pill gold">Monitoring</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-header"><span class="project-num">Project 03</span><span class="project-status status-prod">CI/CD</span></div>
+      <div class="project-title">CI/CD Automation Pipeline</div>
+      <div class="project-desc">Engineered end-to-end CI/CD automation pipelines that reduced deployment time from 1 hour to 2 minutes, enabling rapid and reliable software delivery across multiple environments.</div>
+      <div class="project-metrics">
+        <div class="metric"><div class="metric-val">30min</div><div class="metric-label">Before</div></div>
+        <div class="metric"><div class="metric-val">2min</div><div class="metric-label">After</div></div>
+        <div class="metric"><div class="metric-val">97%</div><div class="metric-label">Faster</div></div>
+      </div>
+      <div class="project-stack"><span class="pill accent">Jenkins</span><span class="pill accent">GitLab CI</span><span class="pill">Docker</span><span class="pill">Terraform</span><span class="pill sage">Git Workflows</span><span class="pill gold">Automation</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-header"><span class="project-num">Project 04</span><span class="project-status status-prod">Backend</span></div>
+      <div class="project-title">Financial Application Microservices</div>
+      <div class="project-desc">Developed scalable REST APIs and microservices supporting customer onboarding, CRM, notifications, loan processing, payment gateways, KYC providers, SMS/email providers, and cloud storage integrations.</div>
+      <div class="project-metrics">
+        <div class="metric"><div class="metric-val">REST</div><div class="metric-label">APIs</div></div>
+        <div class="metric"><div class="metric-val">KYC</div><div class="metric-label">Integrations</div></div>
+        <div class="metric"><div class="metric-val">Cache</div><div class="metric-label">Optimization</div></div>
+      </div>
+      <div class="project-stack"><span class="pill accent">Python</span><span class="pill accent">Java</span><span class="pill">PHP</span><span class="pill">RabbitMQ</span><span class="pill">Redis</span><span class="pill gold">MySQL/PostgreSQL</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-header"><span class="project-num">Project 05</span><span class="project-status status-ml">Full Stack</span></div>
+      <div class="project-title">Customer &amp; Enterprise Web Platforms</div>
+      <div class="project-desc">Delivered multiple web platforms including field force management with payment gateway integration, course management, vehicle service management, employee management, and survey/feedback systems.</div>
+      <div class="project-metrics">
+        <div class="metric"><div class="metric-val">5+</div><div class="metric-label">Platforms</div></div>
+        <div class="metric"><div class="metric-val">SQL</div><div class="metric-label">Databases</div></div>
+        <div class="metric"><div class="metric-val">UI</div><div class="metric-label">Vue/JS</div></div>
+      </div>
+      <div class="project-stack"><span class="pill accent">Django</span><span class="pill accent">Flask</span><span class="pill">Laravel</span><span class="pill">Vue.js</span><span class="pill sage">REST APIs</span><span class="pill gold">Payments</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="sec-header">
+    <div class="sec-tag">04 - Recognition</div>
+    <h2 class="sec-title">Key <em>Achievements</em></h2>
+  </div>
+  <div class="ach-grid">
+    <div class="ach-card">
+      <div class="ach-icon">🏆</div>
+      <div class="ach-title">Innovation Award</div>
+      <div class="ach-desc">Recognized for platform engineering and automation initiatives that improved developer self-service and operational governance.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">⭐</div>
+      <div class="ach-title">Excellence Award</div>
+      <div class="ach-desc">Awarded for delivering high-impact automation and reliability improvements across cloud and Kubernetes operations.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">🛡️</div>
+      <div class="ach-title">Governed Self-Service</div>
+      <div class="ach-desc">Implemented RBAC, approval workflows, and Auth0 SSO to balance engineering agility with security and compliance.</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-icon">⚙️</div>
+      <div class="ach-title">Operational Automation</div>
+      <div class="ach-desc">Automated deployment checks, service health diagnostics, infrastructure monitoring, and routine operational runbooks.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-header" style="margin-bottom:0;">
+    <div class="sec-tag">05 - Connect</div>
+    <h2 class="sec-title">Let's Work <em>Together</em></h2>
+  </div>
+  <div class="contact-layout">
+    <div>
+      <p class="contact-blurb">Open to Principal DevOps, SRE, Platform Engineering, DevOps Leadership, and cloud automation opportunities. Experienced in AWS, Kubernetes, CI/CD, internal developer platforms, backend systems, and reliability engineering.</p>
+      <div class="contact-detail">
+        <a href="mailto:DEEPAKRAJ.1532@GMAIL.COM" class="contact-row"><span class="contact-row-icon">✉️</span>[Masked]</a>
+        <a href="tel:XXXXXXXXXX" class="contact-row"><span class="contact-row-icon">📞</span>+91 XX-XXXX-XXXX</a>
+        <a href="https://www.linkedin.com/in/deepak-kumar-43048083" class="contact-row" target="_blank" rel="noopener"><span class="contact-row-icon">💼</span>LinkedIn - Deepak Kumar</a>
+        <a href="#" class="contact-row" target="_blank" rel="noopener"><span class="contact-row-icon">📄</span>Download Resume</a>
+      </div>
+    </div>
+    <div>
+      <div class="availability-box">
+        <div class="avail-dot"><div class="avail-circle"></div><span style="font-family:'DM Mono',monospace;font-size:9px;color:rgba(250,248,244,0.45);letter-spacing:2px;">AVAILABLE FOR DISCUSSION</span></div>
+        <div class="avail-title">Principal DevOps &amp; Platform Engineering</div>
+        <div class="avail-desc">Based in Bengaluru, India. Experienced in building cloud-native platforms, governed self-service systems, and reliable deployment automation.</div>
+      </div>
+      <div class="about-extra">
+        <div class="about-item">
+          <div class="about-item-label">Education</div>
+          <div class="about-item-val">PGDM - Project Management, MIT Pune, 02/2026<br/>B.Tech - E.C.E, Rajasthan Technical University, 07/2016</div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-label">Languages</div>
+          <div class="about-item-val">English · Hindi</div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-label">Interests</div>
+          <div class="about-item-val">Guitar · Singing · Music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Deepak Kumar</span> - Principal DevOps Engineer</p>
+  <p>Bengaluru, India</p>
+</footer>
+
+<script>
+  const rows = document.querySelectorAll('.exp-row');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  rows.forEach(row => observer.observe(row));
+</script>
+</body>
+</html>
